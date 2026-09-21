@@ -82,7 +82,7 @@ The only required value is the API key. Everything else has sensible defaults:
 
 ```elixir
 Stripe.client("sk_test_...",
-  api_version: "2026-06-24.dahlia",  # pin API version (default: latest)
+  api_version: "2026-08-26.dahlia",  # pin API version (default: latest)
   client_id: "ca_...",               # OAuth client ID (Connect platforms)
   max_retries: 3,                    # default: 2
   open_timeout: 30_000,              # connection timeout ms (default: 30,000)

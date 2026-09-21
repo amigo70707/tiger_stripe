@@ -4,6 +4,16 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Common Changelog](https://common-changelog.org/).
 
+## [Unreleased]
+
+### Changed
+
+- Sync OpenAPI spec to v2512 (API version `2026-08-26.dahlia`) and stripe-ruby parity fixture to v19.6.2.
+- Refresh generated V1 + V2 coverage to 194 service modules, 324 resource structs, 532 params modules, and 26 event files.
+- Add `Stripe.Services.Billing.FeedbackOptionService` (create, retrieve, update, list, deactivate) with `Stripe.Resources.Billing.FeedbackOption` and request params.
+- Add `Stripe.Services.AccountService.unreject/3-4` and `Stripe.Services.PaymentRecordService.list/2-3` with request params.
+- Add `Stripe.Resources.AadeData`, `Stripe.Resources.Sequra`, and `Stripe.Resources.FinancialConnections.Authorization` response structs.
+
 ## [0.4.0] - 2026-07-03
 
 ### Changed

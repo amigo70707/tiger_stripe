@@ -1,7 +1,7 @@
 # File generated from our OpenAPI spec
 defmodule Stripe.Resources.SepaDebitMandateOptions do
   @moduledoc """
-  payment_intent_payment_method_options_mandate_options_sepa_debit
+  setup_intent_payment_method_options_mandate_options_sepa_debit
   """
 
   @typedoc """
@@ -11,6 +11,6 @@ defmodule Stripe.Resources.SepaDebitMandateOptions do
 
   defstruct [:reference_prefix]
 
-  @object_name "payment_intent_payment_method_options_mandate_options_sepa_debit"
+  @object_name "setup_intent_payment_method_options_mandate_options_sepa_debit"
   def object_name, do: @object_name
 end
