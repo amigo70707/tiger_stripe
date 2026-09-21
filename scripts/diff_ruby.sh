@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+export LC_ALL=C # byte-order collation: `sort` output must satisfy `comm`
 
 # Compare generated Elixir SDK against Ruby SDK reference.
 # Compares full relative service paths (not basenames).
