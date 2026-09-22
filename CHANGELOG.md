@@ -4,7 +4,7 @@ All notable changes to this project are documented in this file.
 
 The format is based on [Common Changelog](https://common-changelog.org/).
 
-## [Unreleased]
+## [0.4.1] - 2026-09-22
 
 ### Changed
 
@@ -13,6 +13,7 @@ The format is based on [Common Changelog](https://common-changelog.org/).
 - Add `Stripe.Services.Billing.FeedbackOptionService` (create, retrieve, update, list, deactivate) with `Stripe.Resources.Billing.FeedbackOption` and request params.
 - Add `Stripe.Services.AccountService.unreject/3-4` and `Stripe.Services.PaymentRecordService.list/2-3` with request params.
 - Add `Stripe.Resources.AadeData`, `Stripe.Resources.Sequra`, and `Stripe.Resources.FinancialConnections.Authorization` response structs.
+- Sync OpenAPI spec to v2515 (same `2026-08-26.dahlia` API version): refinements to bank-debit and wallet resource shapes (ACSS, AuBecs, Bacs, SEPA, Bancontact, Kakao/Naver Pay, KrCard, Revolut Pay, Scalapay, US bank account).
 
 ## [0.4.0] - 2026-07-03
 
@@ -181,6 +182,7 @@ The format is based on [Common Changelog](https://common-changelog.org/).
 - Add telemetry events for request lifecycle observability
 - Add Finch HTTP client with connection pooling (Mint + NimblePool)
 
+[0.4.1]: https://github.com/jeffhuen/tiger_stripe/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/jeffhuen/tiger_stripe/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/jeffhuen/tiger_stripe/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/jeffhuen/tiger_stripe/compare/v0.1.11...v0.2.0

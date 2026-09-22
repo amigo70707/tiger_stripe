@@ -2,7 +2,7 @@ defmodule Stripe.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/jeffhuen/tiger_stripe"
-  @version "0.4.0"
+  @version "0.4.1"
 
   def project do
     [
@@ -69,7 +69,7 @@ defmodule Stripe.MixProject do
       name: "tiger_stripe",
       description:
         "Complete Stripe SDK for Elixir with parity to the official " <>
-          "Ruby SDK. V1+V2 coverage (193 services, 320 resource structs, 525 documented params). " <>
+          "Ruby SDK. V1+V2 coverage (194 services, 324 resource structs, 532 documented params). " <>
           "Per-event modules, Finch HTTP/2, RustyJSON, automatic retries, OAuth, webhooks, " <>
           "telemetry, per-client config, streaming pagination.",
       maintainers: ["Jeff Huen"],
