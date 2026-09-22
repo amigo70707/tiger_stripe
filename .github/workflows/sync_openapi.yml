@@ -66,8 +66,11 @@ jobs:
           echo "ruby_ref=$(cat STRIPE_RUBY_VERSION)" >> "$GITHUB_OUTPUT"
 
       - name: Create PR if artifacts changed
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
+          # PAT (not GITHUB_TOKEN) so CI triggers on the PR.
+          token: ${{ secrets.SYNC_PAT || github.token }}
           commit-message: "chore: sync OpenAPI spec ${{ steps.version.outputs.tag }}"
           title: "chore: sync OpenAPI spec ${{ steps.version.outputs.tag }}"
           body: |
@@ -80,3 +83,9 @@ jobs:
           base: main
           labels: openapi-sync
           delete-branch: true
+
+      - name: Enable auto-merge (squash on green CI)
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.SYNC_PAT || github.token }}
+        run: gh pr merge --auto --squash "${{ steps.cpr.outputs.pull-request-number }}"
