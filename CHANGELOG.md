@@ -13,7 +13,8 @@ The format is based on [Common Changelog](https://common-changelog.org/).
 - Add `Stripe.Services.Billing.FeedbackOptionService` (create, retrieve, update, list, deactivate) with `Stripe.Resources.Billing.FeedbackOption` and request params.
 - Add `Stripe.Services.AccountService.unreject/3-4` and `Stripe.Services.PaymentRecordService.list/2-3` with request params.
 - Add `Stripe.Resources.AadeData`, `Stripe.Resources.Sequra`, and `Stripe.Resources.FinancialConnections.Authorization` response structs.
-- Sync OpenAPI spec to v2515 (same `2026-08-26.dahlia` API version): refinements to bank-debit and wallet resource shapes (ACSS, AuBecs, Bacs, SEPA, Bancontact, Kakao/Naver Pay, KrCard, Revolut Pay, Scalapay, US bank account).
+- Sync OpenAPI spec to v2515. The API version stays `2026-08-26.dahlia`.
+- Refresh bank-debit and wallet resource shapes in v2515: ACSS, AuBecs, Bacs, SEPA, Bancontact, Kakao/Naver Pay, KrCard, Revolut Pay, Scalapay, US bank account.
 
 ## [0.4.0] - 2026-07-03
 

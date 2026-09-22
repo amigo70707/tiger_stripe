@@ -70,7 +70,7 @@ defmodule Stripe.MixProject do
       description:
         "Complete Stripe SDK for Elixir with parity to the official " <>
           "Ruby SDK. V1+V2 coverage (194 services, 324 resource structs, 532 documented params). " <>
-          "Per-event modules, Finch HTTP/2, RustyJSON, automatic retries, OAuth, webhooks, " <>
+          "Per-event modules, Finch HTTP/2, automatic retries, OAuth, webhooks, " <>
           "telemetry, per-client config, streaming pagination.",
       maintainers: ["Jeff Huen"],
       licenses: ["MIT"],
